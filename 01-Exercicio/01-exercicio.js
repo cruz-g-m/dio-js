@@ -23,8 +23,6 @@ console.log(pares)
 console.log(impares)
 
 
-//TODO: Imprima os valores dos três vetores um em cada linha:
-
 /**
  * // IMPORTANTE: As funções "gets" e "print" são acessíveis globalmente, onde: 
 // - "gets" : lê UMA linha com dado(s) de entrada (inputs) do usuário;
@@ -35,9 +33,15 @@ let pares = [];
 let impares = [];
 
 //TODO: Implemente uma condição para o armazenamento dos números PARES e ÍMPARES:
-let vetorNormal = vetor.gets();
+
+
+for (let i = 0; i < 5; i++) {
+    let entrada = gets();
+    vetor.push(entrada);
+}
 
 for (let i = 0; i < vetor.length; i++) {
+    
     let vetorNormal = vetor[i];
     
     if(vetor[i] % 2 === 0){
@@ -47,7 +51,9 @@ for (let i = 0; i < vetor.length; i++) {
     }  
 }
 
-print(vetor)
-print(pares)
-print(impares)
+//TODO: Imprima os valores dos três vetores um em cada linha:
+
+print("Vetor: " + vetor)
+print("Par(es): " + pares)
+print("Impar(es): " + impares)
  */
